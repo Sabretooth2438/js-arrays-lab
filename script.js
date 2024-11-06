@@ -1,140 +1,81 @@
-// //Exercise 1
-// const foods = []
+//Exercise 2
+const foods = ['pizza', 'cheeseburger']
 
-// console.log('Exercise 1 result:', foods)
+console.log('Exercise 2 result:', foods)
 
-// //Exercise 2
-// const foods = ['pizza', 'cheeseburger']
+//Exercise 3
+foods.unshift('tacos')
 
-// console.log('Exercise 2 result:', foods)
+console.log('Exercise 3 result:', foods)
 
-// //Exercise 3
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
+//Exercise 4
+const favfood = foods[1]
 
-// console.log('Exercise 3 result:', foods)
+console.log('Exercise 4 result:', favfood)
 
-// //Exercise 4
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// const favfood = foods[1]
+//Exercise 5
+foods.splice(2, 0, 'tofu')
 
-// console.log('Exercise 4 result:', favfood)
+console.log('Exercise 5 result:', foods)
 
-// //Exercise 5
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
+//Exercise 6
+foods.splice(1, 1, 'sushi', 'cupcake')
 
-// console.log('Exercise 5 result:', foods)
+console.log('Exercise 6 result:', foods)
 
-// //Exercise 6
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
-// foods.splice(1, 1, 'sushi', 'cupcake')
+//Exercise 7
+const yummy = foods.slice(1, 3)
 
-// console.log('Exercise 6 result:', foods)
+console.log('Exercise 7 result:', yummy)
 
-// //Exercise 7
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
-// foods.splice(1, 1, 'sushi', 'cupcake')
-// const yummy = foods.slice(1, 3)
+//Exercise 8
+const soyIdx = foods.indexOf('tofu')
 
-// console.log('Exercise 7 result:', yummy)
+console.log('Exercise 8 result:', soyIdx)
 
-// //Exercise 8
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
-// foods.splice(1, 1, 'sushi', 'cupcake')
-// const yummy = foods.slice(1, 3)
-// const soyIdx = foods.indexOf('tofu')
+//Exercise 9
+const allFoods = foods.join(' -> ')
 
-// console.log('Exercise 8 result:', soyIdx)
+console.log('Exercise 9 result:', allFoods)
 
-// //Exercise 9
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
-// foods.splice(1, 1, 'sushi', 'cupcake')
-// const yummy = foods.slice(1, 3)
-// const soyIdx = foods.indexOf('tofu')
-// const allFoods = foods.join(' -> ')
+//Exercise 10
+const hasSoup = foods.includes('soup')
 
-// console.log('Exercise 9 result:', allFoods)
+console.log('Exercise 10 result:', hasSoup)
 
-// //Exercise 10
-// const foods = ['pizza', 'cheeseburger']
-// foods.unshift('tacos')
-// foods.splice(2, 0, 'tofu')
-// foods.splice(1, 1, 'sushi', 'cupcake')
-// const yummy = foods.slice(1, 3)
-// const soyIdx = foods.indexOf('tofu')
-// const allFoods = foods.join(' -> ')
-// const hasSoup = foods.includes('soup')
+//Exercise 11
+const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
+const odds = []
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 !== 0) {
+    odds.push(nums[i])
+  }
+}
 
-// console.log('Exercise 10 result:', hasSoup)
+console.log('Exercise 11 result:', odds)
 
-// //Exercise 11
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
-// const odds = []
-// for (let i = 0; i < nums.length; i++) {
-//   if (nums[i] % 2 !== 0) {
-//     odds.push(nums[i])
-//   }
-// }
+//Exercise 12
+const fizz = []
+const buzz = []
+const fizzbuzz = []
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 3 === 0) {
+    fizz.push(nums[i])
+  }
+  if (nums[i] % 5 === 0) {
+    buzz.push(nums[i])
+  }
+  if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
+    fizzbuzz.push(nums[i])
+  }
+}
 
-// console.log('Exercise 11 result:', odds)
+console.log('Exercise 12 Results:')
+console.log('  fizz:', fizz)
+console.log('  buzz:', buzz)
+console.log('  fizzbuzz:', fizzbuzz)
 
-// //Exercise 12
-// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
-// const fizz = []
-// const buzz = []
-// const fizzbuzz = []
-// for (let i = 0; i < nums.length; i++) {
-//   if (nums[i] % 3 === 0) {
-//     fizz.push(nums[i])
-//   }
-//   if (nums[i] % 5 === 0) {
-//     buzz.push(nums[i])
-//   }
-//   if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
-//     fizzbuzz.push(nums[i])
-//   }
-// }
-
-// console.log('Exercise 12 Results:')
-// console.log('  fizz:', fizz)
-// console.log('  buzz:', buzz)
-// console.log('  fizzbuzz:', fizzbuzz)
-
-// //Exercise 13
-// const numArrays = [
-//   [100, 5, 23],
-//   [15, 21, 72, 9],
-//   [45, 66],
-//   [7, 81, 90]
-// ]
-// const numList = numArrays[numArrays.length - 1]
-
-// console.log('Exercise 13 result:', numList)
-
-// //Exercise 14
-// const numArrays = [
-//   [100, 5, 23],
-//   [15, 21, 72, 9],
-//   [45, 66],
-//   [7, 81, 90]
-// ]
-// const numList = numArrays[numArrays.length - 1]
-// const num = numArrays[2][1]
-
-// console.log('Exercise 14 result:', num)
-
-//Exercise 15
+//Exercise 13
 const numArrays = [
   [100, 5, 23],
   [15, 21, 72, 9],
@@ -142,7 +83,15 @@ const numArrays = [
   [7, 81, 90]
 ]
 const numList = numArrays[numArrays.length - 1]
+
+console.log('Exercise 13 result:', numList)
+
+//Exercise 14
 const num = numArrays[2][1]
+
+console.log('Exercise 14 result:', num)
+
+//Exercise 15
 let total = 0
 for (i = 0; i < numArrays.length; i++) {
   for (j = 0; j < numArrays[i].length; j++) {
