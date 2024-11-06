@@ -1,3 +1,5 @@
+//Most of this work was done by searching online and the given materials
+
 //Exercise 2
 const foods = ['pizza', 'cheeseburger']
 
