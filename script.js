@@ -89,24 +89,65 @@
 
 // console.log('Exercise 11 result:', odds)
 
-//Exercise 12
-const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
-const fizz = []
-const buzz = []
-const fizzbuzz = []
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] % 3 === 0) {
-    fizz.push(nums[i])
-  }
-  if (nums[i] % 5 === 0) {
-    buzz.push(nums[i])
-  }
-  if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
-    fizzbuzz.push(nums[i])
+// //Exercise 12
+// const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90]
+// const fizz = []
+// const buzz = []
+// const fizzbuzz = []
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] % 3 === 0) {
+//     fizz.push(nums[i])
+//   }
+//   if (nums[i] % 5 === 0) {
+//     buzz.push(nums[i])
+//   }
+//   if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
+//     fizzbuzz.push(nums[i])
+//   }
+// }
+
+// console.log('Exercise 12 Results:')
+// console.log('  fizz:', fizz)
+// console.log('  buzz:', buzz)
+// console.log('  fizzbuzz:', fizzbuzz)
+
+// //Exercise 13
+// const numArrays = [
+//   [100, 5, 23],
+//   [15, 21, 72, 9],
+//   [45, 66],
+//   [7, 81, 90]
+// ]
+// const numList = numArrays[numArrays.length - 1]
+
+// console.log('Exercise 13 result:', numList)
+
+// //Exercise 14
+// const numArrays = [
+//   [100, 5, 23],
+//   [15, 21, 72, 9],
+//   [45, 66],
+//   [7, 81, 90]
+// ]
+// const numList = numArrays[numArrays.length - 1]
+// const num = numArrays[2][1]
+
+// console.log('Exercise 14 result:', num)
+
+//Exercise 15
+const numArrays = [
+  [100, 5, 23],
+  [15, 21, 72, 9],
+  [45, 66],
+  [7, 81, 90]
+]
+const numList = numArrays[numArrays.length - 1]
+const num = numArrays[2][1]
+let total = 0
+for (i = 0; i < numArrays.length; i++) {
+  for (j = 0; j < numArrays[i].length; j++) {
+    total += numArrays[i][j]
   }
 }
 
-console.log('Exercise 12 Results:')
-console.log('  fizz:', fizz)
-console.log('  buzz:', buzz)
-console.log('  fizzbuzz:', fizzbuzz)
+console.log('Exercise 15 result:', total)
